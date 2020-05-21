@@ -6,6 +6,7 @@ public class MonkeyTrouble {
 		// TODO Auto-generated method stub
 		
 		System.out.println(theMonkeyTrouble(false, false));
+		System.out.println(sumDouble(2, 3));
 
 	}
 	
@@ -19,6 +20,18 @@ public class MonkeyTrouble {
 		}
 		
 		return false;
+		
+	}
+	
+	public static int sumDouble(int a, int b) {
+		
+		if(a == b) {
+			
+			return (a + b) * 2;
+			
+		}
+		
+		return a + b;
 		
 	}
 
