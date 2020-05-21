@@ -5,9 +5,20 @@ public class MonkeyTrouble {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		
+		System.out.print(sleepIn(true, true));
+		System.out.println();
 		System.out.println(theMonkeyTrouble(false, false));
 		System.out.println(sumDouble(2, 3));
 
+	}
+	
+	public static boolean sleepIn(boolean weekday, boolean vacation){
+		
+		if(!weekday || vacation) {
+			return true;
+		}
+		
+		return false;
 	}
 	
 	public static boolean theMonkeyTrouble(boolean aSmile, boolean bSmile) {
