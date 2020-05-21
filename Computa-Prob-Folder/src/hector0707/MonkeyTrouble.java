@@ -5,13 +5,10 @@ public class MonkeyTrouble {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		
-//		System.out.print(sleepIn(true, true));
-//		System.out.println();
-//		System.out.println(theMonkeyTrouble(false, false));
-//		System.out.println(sumDouble(2, 3));
-
-		firstLastSix in = new firstLastSix();
-		in.firstLast6();
+		System.out.print(sleepIn(true, true));
+		System.out.println();
+		System.out.println(theMonkeyTrouble(false, false));
+		System.out.println(sumDouble(2, 3));
 		
 	}
 	
