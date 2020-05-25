@@ -19,5 +19,19 @@ public class firstLastSix {
 		}
 		return false;
 	}
+	
+	public int sumOfElements(int[] nums) {
+		
+		int counter = 0;
+		
+		for(int i = 0; i < nums.length; i++) {
+			
+			counter += nums[i];
+			
+		}
+		
+		return counter;
+		
+	}
 
 }
