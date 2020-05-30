@@ -23,5 +23,11 @@ public class ArrayBasedProblems {
 		
 		return max;
 	}
+	
+	public int[] fix34(int[] nums) {
+		
+		return nums;
+		
+	}
 
 }
