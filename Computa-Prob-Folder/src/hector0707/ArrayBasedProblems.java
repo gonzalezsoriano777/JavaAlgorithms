@@ -64,5 +64,20 @@ public class ArrayBasedProblems {
 		    return result;
 		
 	}
+	
+	// changes the first and last character in a string so the last will be the first and first will be last ( as a shift )
+	public String frontBack(String str) {
+		
+		
+		if(str.length() <= 1) {
+			return str;
+		}
+		
+		char firstChar = str.charAt(0);
+		char lastChar = str.charAt(str.length() - 1);
+		
+		return lastChar + str.substring(1, str.length() - 1) + firstChar; 
+		
+	}
 
 }
