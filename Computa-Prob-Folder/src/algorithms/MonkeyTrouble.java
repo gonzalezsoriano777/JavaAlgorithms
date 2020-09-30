@@ -1,4 +1,4 @@
-package hector0707;
+package algorithms;
 
 public class MonkeyTrouble {
 

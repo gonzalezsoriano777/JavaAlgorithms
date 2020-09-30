@@ -1,4 +1,4 @@
-package hector0707;
+package algorithms;
 
 import java.util.ArrayList;
 
