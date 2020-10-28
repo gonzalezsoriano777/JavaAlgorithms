@@ -4,7 +4,7 @@ public class CarProject {
 	
 	private String Brand;
 	private String Model;
-	private int Doors;
+	private int Year;
 	private String Color;
 	private boolean isOn = false;
 	
@@ -13,37 +13,39 @@ public class CarProject {
 		this.Model = model;
 	}
 	
-	public CarProject(String brand, String model, int doors, String color) {
+	public CarProject(String brand, String model, int year, String color) {
 		this.Brand = brand;
 		this.Model = model;
-		this.Doors = doors;
+		this.Year = year;
 		this.Color = color;
 		isOn = false;
 	}
 	
-	public void CarIdentifier() {
+	public String CarDescription() {
+		return " This is a " + Brand + Model + " that is a newly yeared car being a " + Year + " car and is " + Color; 
+	}
+	
+	// Identifies if this is either a sedan or coupe
+	public void CarIdentifier(int n) {
 		
-		int sedan = 4;
-		int coupe = 2;
-		
-		if(sedan != coupe) {
-			System.out.println("This car is a sedan");
+		if(n != 4) {
+			System.out.println("This car is a coupe");
 		}
 		
-		System.out.println("This is a coupe");
+		System.out.println("This is a sedan");
 		
 	}
 	
-	public void setOn() {
-		if(!isOn) {
-			System.out.println("Turn on the car on");
-		}
-		
-		System.out.println("Car is on and ready to go");
-	}
-	
-	public void toggleOn() { 
-		isOn = !isOn;
-	}
+//	public void setOn() {
+//		if(!isOn) {
+//			System.out.println("Turn on the car on");
+//		}
+//		
+//		System.out.println("Car is on and ready to go");
+//	}
+//	
+//	public void toggleOn() { 
+//		isOn = !isOn;
+//	}
 
 }
