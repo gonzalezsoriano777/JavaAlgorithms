@@ -6,7 +6,7 @@ public class CarProject {
 	private String Model;
 	private int Doors;
 	private String Color;
-	private boolean isOn = false
+	private boolean isOn = false;
 	
 	public CarProject(String brand, String model) {
 		this.Brand = brand;
