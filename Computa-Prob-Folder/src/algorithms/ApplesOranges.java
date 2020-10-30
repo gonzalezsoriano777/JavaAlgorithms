@@ -12,7 +12,11 @@ public class ApplesOranges {
 
 	// Complete the countApplesAndOranges function below.
 	static void countApplesAndOranges(int s, int t, int a, int b, int[] apples, int[] oranges) {
-
+		
+		System.out.print
+		
+		int appleTotal = 0;
+		
 	}
 
 	private static final Scanner scanner = new Scanner(System.in);
