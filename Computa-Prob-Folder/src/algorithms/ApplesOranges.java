@@ -12,11 +12,29 @@ public class ApplesOranges {
 
 	// Complete the countApplesAndOranges function below.
 	static void countApplesAndOranges(int s, int t, int a, int b, int[] apples, int[] oranges) {
-		
-		System.out.print
-		
+
 		int appleTotal = 0;
+		int orangeTotal = 0;
+
+		for (int i = 0; i < apples.length; i++) {
+			int tempA = a + apples[i];
+
+			if (tempA >= s && tempA <= t) {
+				appleTotal++;
+			}
+		}
+
+		for (int j = 0; j < oranges.length; j++) {
+			int tempB = b + oranges[j];
+			
+			if(tempB >= s && tempB <= t) {
+				orangeTotal++;
+			}
+		}
 		
+		System.out.println(appleTotal);
+		System.out.println(orangeTotal);
+
 	}
 
 	private static final Scanner scanner = new Scanner(System.in);
