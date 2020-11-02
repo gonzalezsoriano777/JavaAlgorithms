@@ -10,67 +10,65 @@ import java.util.regex.*;
 
 public class BreakingRecords {
 
-    // Complete the breakingRecords function below.
-    static int[] breakingRecords(int[] scores) {
+	// Complete the breakingRecords function below.
+	static int[] breakingRecords(int[] scores) {
 
-    	int maxRecord = scores[0];
-    	int minRecord = scores[0];
-    	int[] records = new int[2];
-    	int maxTotal = 0;
-    	int minTotal = 0;
-    	
-    	for(int i = 0; i < scores.length; i++) {
-    		
-    		if(scores[i] > maxRecord) {
-    			maxRecord = scores[i];
-    			maxTotal++;
-    			records[0] = maxTotal;
-    			
-    		} else if(scores[i] < minRecord) {
-    			minRecord = scores[i];
-    			minTotal++;
-    			records[1] = minTotal;
-    		}
-    		
-    	}
-    	
-    	return records;
-    	
+		int maxRecord = scores[0];
+		int minRecord = scores[0];
+		int[] records = new int[2];
+		int maxTotal = 0;
+		int minTotal = 0;
 
-    }
+		for (int i = 0; i < scores.length; i++) {
 
-    private static final Scanner scanner = new Scanner(System.in);
+			if (scores[i] > maxRecord) {
+				maxRecord = scores[i];
+				maxTotal++;
+				records[0] = maxTotal;
 
-    public static void main(String[] args) throws IOException {
-        BufferedWriter bufferedWriter = new BufferedWriter(new FileWriter(System.getenv("OUTPUT_PATH")));
+			} else if (scores[i] < minRecord) {
+				minRecord = scores[i];
+				minTotal++;
+				records[1] = minTotal;
+			}
+		}
 
-        int n = scanner.nextInt();
-        scanner.skip("(\r\n|[\n\r\u2028\u2029\u0085])?");
+		return records;
 
-        int[] scores = new int[n];
+	}
 
-        String[] scoresItems = scanner.nextLine().split(" ");
-        scanner.skip("(\r\n|[\n\r\u2028\u2029\u0085])?");
+	private static final Scanner scanner = new Scanner(System.in);
 
-        for (int i = 0; i < n; i++) {
-            int scoresItem = Integer.parseInt(scoresItems[i]);
-            scores[i] = scoresItem;
-        }
+	public static void main(String[] args) throws IOException {
+		BufferedWriter bufferedWriter = new BufferedWriter(new FileWriter(System.getenv("OUTPUT_PATH")));
 
-        int[] result = breakingRecords(scores);
+		int n = scanner.nextInt();
+		scanner.skip("(\r\n|[\n\r\u2028\u2029\u0085])?");
 
-        for (int i = 0; i < result.length; i++) {
-            bufferedWriter.write(String.valueOf(result[i]));
+		int[] scores = new int[n];
 
-            if (i != result.length - 1) {
-                bufferedWriter.write(" ");
-            }
-        }
+		String[] scoresItems = scanner.nextLine().split(" ");
+		scanner.skip("(\r\n|[\n\r\u2028\u2029\u0085])?");
 
-        bufferedWriter.newLine();
+		for (int i = 0; i < n; i++) {
+			int scoresItem = Integer.parseInt(scoresItems[i]);
+			scores[i] = scoresItem;
+		}
 
-        bufferedWriter.close();
+		int[] result = breakingRecords(scores);
 
-        scanner.close();
-    }
+		for (int i = 0; i < result.length; i++) {
+			bufferedWriter.write(String.valueOf(result[i]));
+
+			if (i != result.length - 1) {
+				bufferedWriter.write(" ");
+			}
+		}
+
+		bufferedWriter.newLine();
+
+		bufferedWriter.close();
+
+		scanner.close();
+	}
 }
