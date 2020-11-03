@@ -36,16 +36,16 @@ public class CarProject {
 		
 	}
 	
-	public void setOn() {
-		if(!isOn) {
-			System.out.println("Turn on the car on");
-		}
-		
-		System.out.println("Car is on and ready to go");
-	}
-	
-	public void toggleOn() { 
-		isOn = !isOn;
-	}
+//	public void setOn() {
+//		if(!isOn) {
+//			System.out.println("Turn on the car on");
+//		}
+//		
+//		System.out.println("Car is on and ready to go");
+//	}
+//	
+//	public void toggleOn() { 
+//		isOn = !isOn;
+//	}
 
 }
