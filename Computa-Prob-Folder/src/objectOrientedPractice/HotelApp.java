@@ -4,7 +4,7 @@ public class HotelApp {
 	
 	public void Hotel() {
 		
-		System.out.println("Hotel in construction");
+		System.out.println("Hotel in construction ");
 		
 	}
 
