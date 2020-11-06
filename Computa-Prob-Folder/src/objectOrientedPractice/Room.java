@@ -18,8 +18,10 @@ public class Room {
 	public void checkIn() {
 		System.out.println("Please enter name for reservation: ");
 		String input = scanner.nextLine();
+		
 		System.out.println("Enter room type (Normal || Premium || Deluxe): ");
 		roomType = scanner.nextLine();
+		
 		isOccupied = true;
 		System.out.println("Thank you, " + input + ", for choosing the " + roomType + " room.");
 	}
