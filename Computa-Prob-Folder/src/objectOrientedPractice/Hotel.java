@@ -1,6 +1,6 @@
 package objectOrientedPractice;
 
-public class HotelApp {
+public class Hotel {
 	
 	public void Hotel() {
 		
