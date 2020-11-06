@@ -4,10 +4,21 @@ import java.util.ArrayList;
 
 public class Hotel {
 	
-	private ArrayList<Room> rooms;
+	//private ArrayList<Room> rooms;
+	private String hotelName;
+	private int numRooms;
 	
-	public Hotel(ArrayList<Room> rooms) {
-		this.rooms = rooms;
+	public Hotel(String HotelName, int NumRooms) {
+		this.hotelName = HotelName;
+		this.numRooms = NumRooms;
+	}
+	
+	public String getHotelName() {
+		return hotelName;
+	}
+	
+	public int findAllNumRooms() {
+		return numRooms;
 	}
 	
 

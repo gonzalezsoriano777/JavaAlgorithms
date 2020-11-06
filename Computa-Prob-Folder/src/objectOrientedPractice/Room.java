@@ -6,15 +6,15 @@ import java.util.Scanner;
 public class Room {
 
 	Scanner scanner = new Scanner(System.in);
-	private int roomCost;
+	private int roomPrice;
 	private boolean availability = true;
 
-	public Room(int roomCost) {
-		this.roomCost = roomCost;
+	public Room(int roomPrice) {
+		this.roomPrice = roomPrice;
 	}
 	
 	public String getRoomPrice() {
-		return NumberFormat.getCurrencyInstance().format(roomCost);
+		return NumberFormat.getCurrencyInstance().format(roomPrice);
 	}
 	
 	public void roomOccupied() {
