@@ -1,11 +1,14 @@
 What is Object Oriented Programming ( OOP ) ?
 
-
+A Programming paradigm that relies on classes & objects. The idea of it is to structure and simplify software programs.  
 
 
 What are it's benefits ?
 
 - Re-usability ( Objects can be used across platforms )
-- Cleaner && Organized
+- Organized/ Cleaner 
+- Simple
+- Made easier for trouble shooting
+- Effective for problem solving 
 
 
