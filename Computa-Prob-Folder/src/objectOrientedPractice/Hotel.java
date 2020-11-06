@@ -10,10 +10,5 @@ public class Hotel {
 		this.rooms = rooms;
 	}
 	
-	public ArrayList<Room> displayableRoom(){
-		
-		return rooms;
-		
-	}
 
 }
