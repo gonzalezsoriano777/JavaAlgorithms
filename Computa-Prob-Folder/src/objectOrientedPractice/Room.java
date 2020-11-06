@@ -1,26 +1,29 @@
 package objectOrientedPractice;
 
+import java.text.NumberFormat;
 import java.util.Scanner;
 
 public class Room {
 
 	Scanner scanner = new Scanner(System.in);
-	private String roomType;
-	private boolean isOccupied;
+	private int roomCost;
+	private boolean availability = true;
 
-	public Room(String RoomType, boolean IsOccupied) {
-		
-		this.roomType = RoomType;
-		this.isOccupied = IsOccupied;
-		
+	public Room(int roomCost) {
+		this.roomCost = roomCost;
 	}
 	
-	public void checkIn() {
-		
+	public String getRoomPrice() {
+		return NumberFormat.getCurrencyInstance().format(roomCost);
 	}
-
-	public void checkOut() {
-		
+	
+	public void roomOccupied() {
+		availability = false;
 	}
+	
+	public boolean roomAvailabilty() {
+		return availability;
+	}
+	
 
 }
