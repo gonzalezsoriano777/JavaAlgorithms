@@ -1,8 +1,11 @@
 What is Object Oriented Programming ( OOP ) ?
 
-A Software Program 
+
 
 
 What are it's benefits ?
+
+- Re-usability ( Objects can be used across platforms )
+- Cleaner && Organized
 
 
