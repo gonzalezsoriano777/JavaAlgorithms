@@ -12,18 +12,17 @@ public class Room {
 	public Room(int roomPrice) {
 		this.roomPrice = roomPrice;
 	}
-	
+
 	public String getRoomPrice() {
 		return NumberFormat.getCurrencyInstance().format(roomPrice);
 	}
-	
+
 	public void roomOccupied() {
 		availability = false;
 	}
-	
+
 	public boolean roomAvailabilty() {
 		return availability;
 	}
-	
 
 }
