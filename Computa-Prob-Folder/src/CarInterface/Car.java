@@ -13,7 +13,5 @@ public class Car {
 		this.Speed = speed;
 		this.Year = year;
 	}
-	
-	
 
 }
