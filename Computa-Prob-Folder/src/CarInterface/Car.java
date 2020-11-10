@@ -2,15 +2,15 @@ package CarInterface;
 
 public class Car {
 
-	private int Mileage;
+	private int Brand;
 	private String Engine;
-	private int Speed;
+	private int Model;
 	private int Year;
 
-	public Car(int mileage, String engine, int speed, int year) {
-		this.Mileage = mileage;
+	public Car(int brand, String engine, int model, int year) {
+		this.Brand = brand;
 		this.Engine = engine;
-		this.Speed = speed;
+		this.Model = model;
 		this.Year = year;
 	}
 
