@@ -1,5 +1,5 @@
 package CarInterface;
 
-public class GasEngine {
+public class GasEngine implements EngineInterface {
 
 }
