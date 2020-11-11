@@ -7,7 +7,6 @@ public class Main {
 			
 		stringCalculator word = new stringCalculator();
 		word.initWord("Hello");
-		System.out.println("hello");
 		
 	}
 
