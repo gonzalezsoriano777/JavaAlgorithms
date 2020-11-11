@@ -2,8 +2,11 @@ package algorithms;
 
 public class stringCalculator {
 
-	public String initWord(String word) {
-		return word;
+	// v1.0
+	public int initWord(String word) {
+		
+		return 0;
+		
 	}
 
 }
